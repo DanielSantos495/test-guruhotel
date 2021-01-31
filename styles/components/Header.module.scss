@@ -1,0 +1,19 @@
+
+@import '../utils/mixin.scss';
+
+.header {
+   align-items: center;
+   display: flex;
+   height: 100px;
+   justify-content: center;
+   margin: 0 auto;
+   width: 90%;
+   button {
+      @include button(120px, 60px, transparent, none, 0)
+   }
+   h1 {
+      font-family: var(--font-primary);
+      font-size: var(--font-size-big);
+      font-weight: 700;
+   }
+}

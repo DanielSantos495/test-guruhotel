@@ -1,0 +1,16 @@
+/* Variables */
+
+:root {
+
+   /* Colors */
+   --color-primary: #E5E5E5;
+   --color-detail: #DECFA4;
+
+   /* Fonts & Size */
+   --font-primary: 'Raleway', Helvetica;
+   --font-size-normal: 16px;
+   --font-size-mid: 20px;
+   --font-size-big: 35px;
+
+
+}
