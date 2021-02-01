@@ -1,0 +1,29 @@
+.productlist__container {
+   width: 100%;
+}
+.productlist__no_search {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   height: 220px;
+   justify-content: space-between;
+   margin: 100px 0 100px 0;
+   width: 100%;
+   h2, h3 {
+      font-family: var(--font-primary);
+   }
+   h3 {
+      font-size: var(--font-size-mid);
+      line-height: calc(var(--font-size-mid) + 7px);
+      text-align: center;
+      width: 270px;
+   }
+   h2 {
+      font-size: calc(var(--font-size-big) * 2);
+      opacity: .1;
+   }
+}
+
+.productlist__search {
+   
+}

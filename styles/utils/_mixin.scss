@@ -1,0 +1,31 @@
+// Mixin
+
+@mixin button($width, $height, $background, $border, $radius) {
+   background-color: $background;
+   border: $border;
+   border-radius: $radius;
+   cursor: pointer;
+   height: $height;
+   outline: none;
+   padding: 0;
+   width: $width;
+   &:active {
+      transform: scale((.99));
+   }
+}
+
+// Media Queries
+
+@mixin media($breakpoint) {
+
+   @if $breakpoint == mid {
+     @media screen and (min-width: 641px) and (max-width: 1024px) {
+       @content;
+     }
+   }
+   @else if $breakpoint == big {
+     @media screen and (min-width: 1025px) {
+       @content;
+     }
+   }
+}

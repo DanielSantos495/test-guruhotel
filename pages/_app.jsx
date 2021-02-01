@@ -7,18 +7,21 @@ import '@/styles/utils/variable.css'
 
 import { Layout } from '@/components/Layout/Layout'
 
-const token = 'LRqTKdHPKl2Gi7dH0gEQBrAQf-54LDOWQgVUi_ZX8b4v2GIKFnDVrbTmJZPKZg0veTymiZfEaF5hUxSXISZPkGw9IEI7GScx8UuENzNdopYbPZ_B0gcjYAqrv2sVYHYx'
+const token = 'VFcT6l2zbbI6oAlyuQjembQgHttjgRnLXElDEFgw7mM8-WudbWehlF1HAB5AUOeqepTiDNJ9qvw2wGbvskVtx8eQRCfzMNB6P0GtvSIBj00sUGuHcpZ25y1fHzEXYHYx'
 
 const client = new ApolloClient({
-   uri: 'https://api.yelp.com/v3',
+   uri: 'https://api.yelp.com/v3/graphql',
    request: operation => {
       operation.setContext({
-        headers: {
-          authorization: `Bearer ${token}`,
-          AccessControlAllowOrigin: 'no-cors'
-        }
+         headers: {
+            authorization: `Bearer ${token}`,
+            'Content-Type': 'application/graphql'
+         }
       })
-    }
+   },
+   fetchOptions: {
+      mode: 'no-cors'
+   }
 })
 
 const MyApp = ({ Component, pagesProps }) => {

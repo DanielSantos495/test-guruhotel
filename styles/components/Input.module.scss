@@ -1,0 +1,28 @@
+@import '../utils/mixin.scss';
+
+.label {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   @include media(mid) {
+      width: 90%;
+   }
+   @include media(big) {
+      width: 75%;
+   }
+}
+.input {
+   border: none;
+   border-radius: 25px;
+   box-sizing: border-box;
+   outline: none;
+   padding: 0 0 0 10px;
+   &:focus {
+      box-shadow: 0 0 0 2px var(--color-detail);
+   }
+   &::placeholder {
+      font-family: var(--font-primary);
+      opacity: .5;
+      text-align: center;
+   }
+}
