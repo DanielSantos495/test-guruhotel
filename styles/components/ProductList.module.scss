@@ -1,3 +1,5 @@
+@import '../utils/mixin.scss';
+
 .productlist__container {
    width: 100%;
 }
@@ -25,5 +27,31 @@
 }
 
 .productlist__search {
-   
+   margin: 50px 0 0 0;
+   h2 {
+      align-items: center;
+      display: flex;
+      font-family: var(--font-primary);
+      justify-content: center;
+      text-align: center;
+      margin: 50px 0;
+      span {
+         border-top: 1px solid #000;
+         margin: 0 10px;
+         width: 15px;
+      }
+   }
+   ul {
+      display: grid;
+      gap: 20px;
+      margin: 0 0 50px 0;
+      @include media(mid) {
+         grid-template-columns: repeat(2,1fr);
+         gap: 20px;
+      }
+      @include media(big) {
+         grid-template-columns: repeat(3, 1fr);
+         gap: 20px;
+      }
+   }
 }

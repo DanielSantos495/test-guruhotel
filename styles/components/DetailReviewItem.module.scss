@@ -1,0 +1,32 @@
+.detail__reviews_item {
+   align-items: center;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px 3px rgba(0, 0, 0, .25);
+   box-sizing: border-box;
+   display: flex;
+   padding: 20px;
+   width: 90%;
+   div {
+      width: 100px;
+      & > img {
+         border-radius: 50px;
+         height: 70px;
+         margin: 0 0 10px 0;
+         width: 70px;
+      }
+      & > p {
+         margin: 0 0 5px 0;
+      }
+      span {
+         display: flex;
+         align-items: center;
+         img {
+            height: 25px;
+            width: 25px;
+         }
+      }
+   }
+   p {
+      width: 80%;
+   }
+}

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { Input } from '@/components/Input/Input'
 import { Button } from '@/components/Button/Button'
 
-import { search__container, search__img } from '@/styles/components/Search.module.scss'
+import { search__container, search__button_icon } from '@/styles/components/Search.module.scss'
 
 export const Search = (props) => {
 
@@ -37,7 +37,7 @@ export const Search = (props) => {
          />
          <Button type='button' onClick={handleButton} width='150px' height='40px'>
             Buscar
-            <img className={search__img} src={iconSearch} />
+            <img className={search__button_icon} src={iconSearch} atl='Mignifyin glass'/>
          </Button>
       </section>
    )

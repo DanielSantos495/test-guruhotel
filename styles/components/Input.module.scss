@@ -5,18 +5,20 @@
    justify-content: center;
    width: 100%;
    @include media(mid) {
-      width: 90%;
+      width: 80%;
    }
    @include media(big) {
-      width: 75%;
+      width: 70%;
    }
 }
 .input {
    border: none;
    border-radius: 25px;
    box-sizing: border-box;
+   font-size: var(--font-size-input);
    outline: none;
    padding: 0 0 0 10px;
+   text-align: center;
    &:focus {
       box-shadow: 0 0 0 2px var(--color-detail);
    }
